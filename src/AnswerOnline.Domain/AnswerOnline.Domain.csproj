@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AnswerOnline.Domain.Shared\AnswerOnline.Domain.Shared.csproj" />
+    <ProjectReference Include="..\AnswerOnline.Toolkit\AnswerOnline.Toolkit.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AnswerOnline.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:AnswerOnline.WebApi.Controllers.CommissionerController">
+            <summary>
+            委员控制器
+            </summary>
+        </member>
+        <member name="M:AnswerOnline.WebApi.Controllers.CommissionerController.GetAll">
+            <summary>
+            获取所有委员
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AnswerOnline.WebApi.Controllers.CommissionerController.GetQuestionsByCommissinerIds(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            根据一组委员id获取一组题
+            </summary>
+            <param name="commissinerIds">一组委员id</param>
+            <returns></returns>
+        </member>
+        <member name="M:AnswerOnline.WebApi.Controllers.CommissionerController.Grade(AnswerOnline.Application.Submits.Dto.SubmitInput)">
+            <summary>
+            提交试题，获取评分
+            </summary>
+            <param name="submitInput"></param>
+            <returns></returns>
+        </member>
+        <member name="T:AnswerOnline.WebApi.Controllers.ParticipantController">
+            <summary>
+            参赛者控制器
+            </summary>
+        </member>
+        <member name="M:AnswerOnline.WebApi.Controllers.ParticipantController.Submit(AnswerOnline.Application.Participants.Dto.VerifyParticipantInput)">
+            <summary>
+            提交手机号、姓名进行验证，返回手机号、姓名、已答题次数
+            </summary>
+            <param name="verifyParticipantInput"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AnswerOnline.WebApi.Controllers.ParticipantController.GetAnswerNumberByPhoneNumber(System.String)">
+            <summary>
+            根据手机号获取已答题次数
+            </summary>
+            <param name="phoneNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="T:AnswerOnline.WebApi.Controllers.RankingController">
+            <summary>
+            排名控制器
+            </summary>
+        </member>
+        <member name="M:AnswerOnline.WebApi.Controllers.RankingController.GetRankingByPhoneNumber(System.String)">
+            <summary>
+            查看自己的排名
+            </summary>
+            <param name="phoneNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AnswerOnline.WebApi.Controllers.RankingController.GetTopList(System.Int32)">
+            <summary>
+            获取排名列表
+            </summary>
+            <param name="top">取前几名</param>
+            <returns></returns>
+        </member>
+        <member name="T:AnswerOnline.WebApi.Controllers.SendWordController">
+            <summary>
+            寄语
+            </summary>
+        </member>
+        <member name="M:AnswerOnline.WebApi.Controllers.SendWordController.GetSendWord(System.Int32)">
+            <summary>
+            随机取几条寄语
+            </summary>
+            <param name="number"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

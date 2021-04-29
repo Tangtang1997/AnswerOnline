@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AnswerOnline.Toolkit</name>
+    </assembly>
+    <members>
+        <member name="M:Microsoft.Extensions.DependencyInjection.AutoMapperServiceCollectionExtension.RegisterAutoMapperProfile(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            添加AutoMapper配置
+            </summary>
+            <param name="services"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.JsonExtensions.ToJsonString``1(``0,System.Text.Json.JsonSerializerOptions)">
+            <summary> 
+            将对象序列为json字符串
+            </summary>
+            <param name="obj"></param>
+            <param name="serializerOptions"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.JsonExtensions.FromJsonString``1(System.String,System.Text.Json.JsonSerializerOptions)">
+            <summary>
+            将json字符串反序列为对象
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="jsonString"></param>
+            <param name="serializerOptions"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AnswerOnline.Toolkit.Helper.AssemblyHelper.LoadTypes``1(System.Collections.Generic.IEnumerable{System.Reflection.Assembly})">
+            <summary>
+            找出<paramref name="assemblies"/>集合中所有指定类型的派生类型
+            </summary>
+            <param name="assemblies">需要查找的<see cref="T:System.Reflection.Assembly"/>集合</param>
+            <returns><see cref="T:System.Collections.Generic.IEnumerable`1"/></returns>
+        </member>
+        <member name="T:AnswerOnline.Toolkit.UnifyModel.Result">
+            <summary>
+            统一返回模型类(不需要返回数据的操作)
+            </summary>
+        </member>
+        <member name="P:AnswerOnline.Toolkit.UnifyModel.Result.IsSucceeded">
+            <summary>
+            是否成功
+            </summary> 
+        </member>
+        <member name="P:AnswerOnline.Toolkit.UnifyModel.Result.Description">
+            <summary>
+            描述消息
+            </summary>
+        </member>
+        <member name="M:AnswerOnline.Toolkit.UnifyModel.Result.Success(System.String)">
+            <summary>
+            成功的返回
+            </summary>
+            <param name="description">附加消息</param>
+            <returns><see cref="T:AnswerOnline.Toolkit.UnifyModel.Result"/></returns>
+        </member>
+        <member name="M:AnswerOnline.Toolkit.UnifyModel.Result.Failed(System.String)">
+            <summary>
+            失败的返回
+            </summary>
+            <param name="description">附加消息</param>
+            <returns><see cref="T:AnswerOnline.Toolkit.UnifyModel.Result"/></returns>
+        </member>
+        <member name="M:AnswerOnline.Toolkit.UnifyModel.Result`1.Success(`0,System.String)">
+            <summary>
+            带有数据的成功的返回
+            </summary>
+            <param name="t">要返回的数据</param>
+            <param name="description">附加消息</param>
+            <returns><see cref="T:AnswerOnline.Toolkit.UnifyModel.Result`1"/></returns>
+        </member>
+        <member name="M:AnswerOnline.Toolkit.UnifyModel.Result`1.Failed(`0,System.String)">
+            <summary>
+            带有数据的失败的返回
+            </summary>
+            <param name="t">要返回的数据</param>
+            <param name="description">附加消息</param>
+            <returns><see cref="T:AnswerOnline.Toolkit.UnifyModel.Result`1"/></returns>
+        </member>
+    </members>
+</doc>

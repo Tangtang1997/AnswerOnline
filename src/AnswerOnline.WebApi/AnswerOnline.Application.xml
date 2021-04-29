@@ -1,0 +1,321 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AnswerOnline.Application</name>
+    </assembly>
+    <members>
+        <member name="P:AnswerOnline.Application.Commissioners.Dto.CommissionerDto.Name">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:AnswerOnline.Application.Commissioners.Dto.CommissionerDto.Position">
+            <summary>
+            职位
+            </summary>
+        </member>
+        <member name="T:AnswerOnline.Application.Commissioners.ICommissionerAppService">
+            <summary>
+            委员服务
+            </summary>
+        </member>
+        <member name="M:AnswerOnline.Application.Commissioners.ICommissionerAppService.GetAllAsync">
+            <summary>
+            获取所有委员
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:AnswerOnline.Application.DomainEventHandlers.Submitted.SubmitDomainHandler">
+            <summary>
+            参赛者提交答案事件处理
+            </summary>
+        </member>
+        <member name="T:AnswerOnline.Application.Participants.Dto.ParticipantTopDto">
+            <summary>
+            排名
+            </summary>
+        </member>
+        <member name="P:AnswerOnline.Application.Participants.Dto.ParticipantTopDto.Name">
+            <summary>
+            参赛者姓名
+            </summary>
+        </member>
+        <member name="P:AnswerOnline.Application.Participants.Dto.ParticipantTopDto.PhoneNumber">
+            <summary>
+            参赛者手机号
+            </summary>
+        </member>
+        <member name="P:AnswerOnline.Application.Participants.Dto.ParticipantTopDto.Score">
+            <summary>
+            分数
+            </summary>
+        </member>
+        <member name="T:AnswerOnline.Application.Participants.Dto.VerifyParticipantInput">
+            <summary>
+            验证答题参与者的身份信息
+            </summary>
+        </member>
+        <member name="P:AnswerOnline.Application.Participants.Dto.VerifyParticipantInput.Name">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:AnswerOnline.Application.Participants.Dto.VerifyParticipantInput.PhoneNumber">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:AnswerOnline.Application.Participants.Dto.VerifyParticipantInput.Department">
+            <summary>
+            部门
+            </summary>
+        </member>
+        <member name="T:AnswerOnline.Application.Participants.Dto.VerifyParticipantOutput">
+            <summary>
+            验证答题参与者的身份信息
+            </summary>
+        </member>
+        <member name="P:AnswerOnline.Application.Participants.Dto.VerifyParticipantOutput.Id">
+            <summary>
+            参与者唯一标识
+            </summary>
+        </member>
+        <member name="P:AnswerOnline.Application.Participants.Dto.VerifyParticipantOutput.Name">
+            <summary>
+            参与者姓名
+            </summary>
+        </member>
+        <member name="P:AnswerOnline.Application.Participants.Dto.VerifyParticipantOutput.PhoneNumber">
+            <summary>
+            参与者手机号
+            </summary>
+        </member>
+        <member name="P:AnswerOnline.Application.Participants.Dto.VerifyParticipantOutput.Department">
+            <summary>
+            部门
+            </summary>
+        </member>
+        <member name="P:AnswerOnline.Application.Participants.Dto.VerifyParticipantOutput.AnsweredNumber">
+            <summary>
+            已答题次数
+            </summary>
+        </member>
+        <member name="T:AnswerOnline.Application.Participants.IParticipantAppService">
+            <summary>
+            参赛者服务
+            </summary>
+        </member>
+        <member name="M:AnswerOnline.Application.Participants.IParticipantAppService.VerifySubmitAsync(AnswerOnline.Application.Participants.Dto.VerifyParticipantInput)">
+            <summary>
+            验证手机号、姓名
+            </summary>
+            <param name="verifyParticipantInput"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AnswerOnline.Application.Participants.IParticipantAppService.GetAnsweredNumberAsync(System.String)">
+            <summary>
+            获取已答题次数
+            </summary>
+            <param name="phoneNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AnswerOnline.Application.Participants.IParticipantAppService.GetTopList(System.Int32)">
+            <summary>
+            获取top排名列表
+            </summary> 
+            <param name="top"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AnswerOnline.Application.Participants.IParticipantAppService.GetRankingAsync(System.String)">
+            <summary>
+            查看自己的排名
+            </summary>
+            <param name="phoneNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AnswerOnline.Application.Participants.ParticipantAppService.VerifySubmitAsync(AnswerOnline.Application.Participants.Dto.VerifyParticipantInput)">
+            <summary>
+            验证手机号、姓名
+            </summary>
+            <param name="verifyParticipantInput"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AnswerOnline.Application.Participants.ParticipantAppService.GetAnsweredNumberAsync(System.String)">
+            <summary>
+            获取已答题次数
+            </summary>
+            <param name="phoneNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AnswerOnline.Application.Participants.ParticipantAppService.GetTopList(System.Int32)">
+            <summary>
+            获取top排名列表
+            </summary>
+            <param name="top"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AnswerOnline.Application.Participants.ParticipantAppService.GetRankingAsync(System.String)">
+            <summary>
+            查看自己的排名
+            </summary>
+            <param name="phoneNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="P:AnswerOnline.Application.Questions.Dto.QuestionChoiceOptionDto.Option">
+            <summary>
+            项 
+            </summary>
+        </member>
+        <member name="P:AnswerOnline.Application.Questions.Dto.QuestionChoiceOptionDto.OptionType">
+            <summary>
+            对于选择题：A、B、C、D（0、1、2、3）
+            对于判断题：True、False（0、1）
+            </summary>
+        </member>
+        <member name="P:AnswerOnline.Application.Questions.Dto.QuestionDto.Number">
+            <summary>
+            序号，编号
+            </summary>
+        </member>
+        <member name="P:AnswerOnline.Application.Questions.Dto.QuestionDto.Stem">
+            <summary>
+            题干
+            </summary>
+        </member>
+        <member name="P:AnswerOnline.Application.Questions.Dto.QuestionDto.QuestionType">
+            <summary>
+            题型
+            </summary>
+        </member>
+        <member name="P:AnswerOnline.Application.Questions.Dto.QuestionDto.Level">
+            <summary>
+            难易度
+            </summary>
+        </member>
+        <member name="P:AnswerOnline.Application.Questions.Dto.QuestionDto.Score">
+            <summary>
+            分值
+            </summary>
+        </member>
+        <member name="P:AnswerOnline.Application.Questions.Dto.QuestionDto.CommissionerId">
+            <summary>
+            关联委员Id
+            </summary>
+        </member>
+        <member name="M:AnswerOnline.Application.Questions.IQuestionAppService.GetQuestionsByCommissinerIdsAsync(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            根据一组委员id获取一组题
+            </summary>
+            <param name="commissinerIds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AnswerOnline.Application.Questions.QuestionAppService.GetQuestionsByCommissinerIdsAsync(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            根据一组委员id获取一组题
+            </summary>
+            <param name="commissinerIds"></param>
+            <returns></returns>
+        </member>
+        <member name="T:AnswerOnline.Application.Submits.Dto.SendWordDto">
+            <summary>
+            寄语
+            </summary>
+        </member>
+        <member name="P:AnswerOnline.Application.Submits.Dto.SendWordDto.Name">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:AnswerOnline.Application.Submits.Dto.SendWordDto.SendWord">
+            <summary>
+            寄语内容
+            </summary>
+        </member>
+        <member name="T:AnswerOnline.Application.Submits.Dto.SubmitInput">
+            <summary>
+            提交答案输入参数
+            </summary>
+        </member>
+        <member name="P:AnswerOnline.Application.Submits.Dto.SubmitInput.SubmitterId">
+            <summary>
+            提交者Id
+            </summary>
+        </member>
+        <member name="P:AnswerOnline.Application.Submits.Dto.SubmitInput.TimeOfSubmit">
+            <summary>
+            做题用时 
+            </summary>
+        </member>
+        <member name="P:AnswerOnline.Application.Submits.Dto.SubmitInput.SendWord">
+            <summary>
+            寄语
+            </summary>
+        </member>
+        <member name="P:AnswerOnline.Application.Submits.Dto.SubmitInput.SubmitQustions">
+            <summary>
+            提交的答案
+            </summary>
+        </member>
+        <member name="T:AnswerOnline.Application.Submits.Dto.SubmitOutput">
+            <summary>
+            提交答案的输出参数
+            </summary>
+        </member>
+        <member name="P:AnswerOnline.Application.Submits.Dto.SubmitOutput.Score">
+            <summary>
+            得分
+            </summary>
+        </member>
+        <member name="P:AnswerOnline.Application.Submits.Dto.SubmitOutput.Ranking">
+            <summary>
+            排名
+            </summary>
+        </member>
+        <member name="P:AnswerOnline.Application.Submits.Dto.SubmitOutput.AnswerNumber">
+            <summary>
+            已答题次数
+            </summary>
+        </member>
+        <member name="T:AnswerOnline.Application.Submits.Dto.SubmitQuestionDto">
+            <summary>
+            题
+            </summary>
+        </member>
+        <member name="P:AnswerOnline.Application.Submits.Dto.SubmitQuestionDto.Id">
+            <summary>
+            题Id
+            </summary>
+        </member>
+        <member name="P:AnswerOnline.Application.Submits.Dto.SubmitQuestionDto.QuestionOptionTypes">
+            <summary>
+            答案选项
+            </summary>
+        </member>
+        <member name="T:AnswerOnline.Application.Submits.ISubmitAppService">
+            <summary>
+            提交服务
+            </summary>
+        </member>
+        <member name="M:AnswerOnline.Application.Submits.ISubmitAppService.GradeAsync(AnswerOnline.Application.Submits.Dto.SubmitInput)">
+            <summary>
+            评分
+            </summary>
+            <param name="submitInput"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AnswerOnline.Application.Submits.SubmitAppService.GradeAsync(AnswerOnline.Application.Submits.Dto.SubmitInput)">
+            <summary>
+            评分
+            </summary>
+            <param name="submitInput"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AnswerOnline.Application.Submits.SubmitAppService.CalculateScore(System.Collections.Generic.IEnumerable{AnswerOnline.Application.Submits.Dto.SubmitQuestionDto})">
+            <summary>
+            计算得分
+            </summary>
+            <param name="submitQuestionDtos"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
