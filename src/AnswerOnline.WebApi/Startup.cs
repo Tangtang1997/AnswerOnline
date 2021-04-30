@@ -6,6 +6,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
 using System.IO;
+using LogDashboard;
+using Serilog;
 
 namespace AnswerOnline.WebApi
 {
@@ -24,12 +26,16 @@ namespace AnswerOnline.WebApi
             Configuration = builder.Build();
             _corsPolicy = Configuration.GetValue<string>("AllowedHosts");
         }
-         
+
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            Log.Information("ConfigureServices");
+
+            services.AddLogDashboard();
+
             services.AddControllers();
 
             services.ConfigureModule(Configuration);
@@ -51,6 +57,8 @@ namespace AnswerOnline.WebApi
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseLogDashboard();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
