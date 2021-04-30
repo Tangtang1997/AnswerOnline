@@ -23,6 +23,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnswerOnline.Swagger", "src
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnswerOnline.TestWebApi", "test\AnswerOnline.TestWebApi\AnswerOnline.TestWebApi.csproj", "{257C2026-58D1-41C3-B2D9-696152167F3A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnswerOnline.Website", "src\AnswerOnline.Website\AnswerOnline.Website.csproj", "{D51EC2D3-5A7F-463D-9A5A-253E33DB3877}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,10 @@ Global
 		{257C2026-58D1-41C3-B2D9-696152167F3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{257C2026-58D1-41C3-B2D9-696152167F3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{257C2026-58D1-41C3-B2D9-696152167F3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D51EC2D3-5A7F-463D-9A5A-253E33DB3877}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D51EC2D3-5A7F-463D-9A5A-253E33DB3877}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D51EC2D3-5A7F-463D-9A5A-253E33DB3877}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D51EC2D3-5A7F-463D-9A5A-253E33DB3877}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,6 +80,7 @@ Global
 		{6D1A9367-C55C-4FE2-AB65-79483AB048C6} = {2E1F7858-6573-4EB9-9785-8CA7696D4CAC}
 		{8DDC1DF9-2D5C-43B9-9723-05B9374372FA} = {2E1F7858-6573-4EB9-9785-8CA7696D4CAC}
 		{257C2026-58D1-41C3-B2D9-696152167F3A} = {56E02400-1CB4-4663-869E-17538486ED2C}
+		{D51EC2D3-5A7F-463D-9A5A-253E33DB3877} = {2E1F7858-6573-4EB9-9785-8CA7696D4CAC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FFF3225C-696E-48AC-A912-648860C7C0FC}
