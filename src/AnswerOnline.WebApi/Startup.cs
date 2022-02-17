@@ -17,6 +17,7 @@ namespace AnswerOnline.WebApi
 
         public Startup(IHostEnvironment env)
         {
+            //
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
                 .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
