@@ -17,6 +17,7 @@ namespace AnswerOnline.WebApi
 
         public Startup(IHostEnvironment env)
         {
+            //
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
                 .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
@@ -32,9 +33,9 @@ namespace AnswerOnline.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            Log.Information("ConfigureServices");
-
             services.AddLogDashboard();
+
+            Log.Information("ConfigureServices");
 
             services.AddControllers();
 
