@@ -1,0 +1,22 @@
+name: .NET Core CI/CD Test
+on: push
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.101
+    - name: Docker Build & Push to Docker Hub
+      uses: opspresso/action-docker@master
+      with:
+        args: --docker
+      env:
+        USERNAME: ${{ secrets.DOCKER_USERNAME }}
+        PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+        DOCKERFILE: "Dockerfile"
+        IMAGE_NAME: "1615631517/AnswerOnline"
+        TAG_NAME: "v0.0.1"
+        LATEST: "true"
